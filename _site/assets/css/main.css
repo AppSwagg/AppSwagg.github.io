@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #1c1c28; color: #FFFF; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+nav { position: fixed; z-index: 100000; display: grid; width: 100%; grid-template-columns: 1fr 2fr; padding: 0.5em; background-color: rgba(0, 0, 0, 0.2); }
+
+.logo { width: 60px; margin-left: 10px; }
+
+nav > div > button { padding: 0.5em; margin: 0; }
+
+nav > div > a { margin-right: 10px; }
+
+.nav-buttons { justify-self: end; align-self: center; }
+
+footer { text-align: center; padding: 10px; }
+
+h1 { font-size: 3em; margin-bottom: 0.5em; }
+
+h2 { font-size: 2em; margin-bottom: 20px; }
+
+a { text-decoration: none; color: #FFFF; }
+
+form { margin-tops: 2em; display: grid; }
+
+.input-group > input { width: 100%; }
+
+label { display: none; }
+
+input, button, textarea, a.button { padding: 1em; border-radius: 50px; background-color: #feea2c; margin-top: 10px; border: none; font-weight: bold; color: #1c1c28; }
+
+input:focus, button:focus { outline: none; background-color: #1c1c28; }
+
+input.outline, button.outline, textarea.outline, a.outline { background-color: transparent; border: 2px #FFFF solid; color: #FFFF; }
+
+.hero { display: grid; height: 100vh; width: 100vw; }
+
+.hero_header { position: absolute; align-self: end; width: 50%; padding: 1em; }
+
+#anim { height: 100%; width: 100%; }
+
+.container { transition: all 1s ease-out; opacity: 0; min-height: 100vh; padding: 10px; }
+
+.container.fade-in { opacity: 1; transition: all 1s ease-in; }
+
+.featured { display: grid; grid-template-columns: 1fr 1fr 1fr; justify-content: center; padding-top: 4em; min-height: 300px; }
+
+.featured > img { width: 80%; justify-self: center; transition: margin 1s ease-in-out; }
+
+@media screen and (min-width: 992px) { .featured > img { width: 60%; } }
+
+.disperse > img.center { width: calc(80% + 20px); transition: width 0.8s ease-in-out; }
+
+@media screen and (min-width: 992px) { .disperse > img.center { width: calc(60% + 20px); } }
+
+.disperse > img, .disperse > div { margin: 0; }
+
+.right { margin-right: 100%; }
+
+.left { margin-left: 100%; }
+
+img.center { z-index: 1000; transition: width 0.8s ease-in-out; }
+
+.featured-details { text-align: center; }
+
+@media screen and (min-width: 992px) { .featured-details { display: grid; align-items: center; grid-template-columns: 1fr 1fr 1fr; } }
+
+.featured-details > div { justify-self: center; margin-top: 10px; }
+
+.about, .contact { display: grid; justify-content: center; align-content: center; text-align: center; position: relative; width: 100vw; }
+
+/*# sourceMappingURL=main.css.map */
